@@ -30,7 +30,7 @@ def testPythonCode(code):
         exit_code = e.returncode
         output = e.output
 
-    if (exit_code == 0 and output != ""):
+    if (exit_code == 0 and output != "" and output != b""):
         return output
 
     return None

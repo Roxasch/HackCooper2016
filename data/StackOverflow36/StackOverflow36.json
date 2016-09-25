@@ -1,0 +1,1 @@
+{"code": "if not somestring.contains(\"blah\"):\n   continue\n", "output": "b'tr  is been found in  This be a string\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow36", "dnvotes": 0}

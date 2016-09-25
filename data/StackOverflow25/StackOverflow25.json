@@ -1,0 +1,1 @@
+{"code": "", "output": "b'var from printGlobalText: global from printGlobalText fun.\\nvar from printLocalText: local version from printLocalText fun\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow25", "dnvotes": 0}

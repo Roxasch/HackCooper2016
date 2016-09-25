@@ -1,0 +1,1 @@
+{"code": "class PassByReference:\n    def __init__(self):\n        self.variable = 'Original'\n        self.Change(self.variable)\n        print self.variable\n\n    def Change(self, var):\n        var = 'Changed'\n", "output": "b'Peter\\nMichael\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow43", "dnvotes": 0}
