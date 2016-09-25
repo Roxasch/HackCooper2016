@@ -44,7 +44,7 @@
 				<div class="col-sm-7">
 					<div class="row">
 						<div class="col-sm-6 header_p">
-							Problems
+                            Problem
 						</div>
 						<div class="col-sm-6 header_p">
 							<div class="buttons pull-right">
@@ -60,60 +60,35 @@
 						</div>
 					</div>
 					<hr>
-					<div class="row post">
+					<div class="col-sm-12" style=text-align:center>
+                    {% for i in range(length) %}
+                        <div class="row post">
 						<div class="col-sm-2 post-info">
-							0<br>
+							{{ data[i]['upvotes'] + data[i]['dnvotes'] }}<br>
 							votes<br><br>
 							0<br>
 							answers<br><br>
-							0 views
+							{{ data[i]['views'] }} views
 						</div>
 						<div class="col-sm-10">
-							<div class="row">
-								<a href="#">This is the title</a><br>
-								this is the body text
+							<div class="row" style=font-size:20px>
+								<a href="/text?title={{data[i]['name']}}" style=font-size:36px>{{ data[i]['name'] }}</a><br>
+								Learn to code
 							</div>
 							<div class="row">
 								<button type="button" class="btn btn-default">
-									#language
+									{{ data[i]['lang'] }}
 								</button>
 							</div>
 						</div>
 					</div>
 					<hr>
-					<div class="row post">
-						<div class="col-sm-2 post-info">
-							0<br>
-							votes<br><br>
-							0<br>
-							answers<br><br>
-							0 views
-						</div> 
-						<div class="col-sm-10">
-							<div class="row">
-								<a href="#">This is the title</a><br>
-								this is the body text
-							</div>
-							<div class="row">
-								<button type="button" class="btn btn-default">
-									#language
-								</button>
-							</div>
-						</div>
+            {% endfor %}
 					</div>
 					<hr>
-				</div>
-				<div class="col-sm-4 tags">
-					Related Tags
-					<ul>
-						<li>tag 1</li>
-						<li>tag 2</li>
-						<li>tag 3</li>
-						<li>tag 4</li>
-						<li>tag 5</li>
-					</ul>
 				</div>
 			</div>
+            </div>
 		</div>
 	</body>
 </HTML>

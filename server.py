@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, send_from_directory
+from flask import Flask, render_template, request, redirect, url_for, send_from_directory, json
 from flask_bootstrap import Bootstrap
 import os
 import imp
@@ -14,6 +14,7 @@ Bootstrap(app)
 
 @app.route("/css/<path:path>",methods=['GET'])
 def css(path):
+    print path
     return send_from_directory('css',path)
 
 @app.route("/fonts/<path:path>",methods=['GET'])
@@ -31,14 +32,24 @@ def plugin(path):
 # Return home screen
 @app.route("/", methods=['GET','POST'])
 def index():
-    return render_template('index.html')
+    count = []
+    for d in os.listdir('/home/ubuntu/HackCooper2016/static'):
+        json_data = open('/home/ubuntu/HackCooper2016/static/' + d + '/' + d + '.json')
+        count += [json.load(json_data)]
+    length = len(count)
+    return render_template('index.html',length=length,data = count)
 
 # Return text field
 @app.route('/text', methods=['GET','POST'])
 def text():
-    points = 0
+    x = request.args['title']
+    points = helper_fns.getUpvotes(x)
+    code = helper_fns.getIncorrectCode(x)
+    print code
     return render_template('text_area.html',
         points = points,
+        title = x,
+        code = code,
         success = 'none',
         stdout = 'none',
         error  = 'none')
@@ -63,12 +74,14 @@ def checkCode():
 
 @app.route('/upvote')
 def upvote():
-    print 'up'
+    x = request.args['vote']
+    helper_fns.upVote(x)
     return render_template('text_area.html')
 
 @app.route('/downvote')
 def downvote():
-    print 'down'
+    x = request.args['vote']
+    helper_fns.dnVote(x)
     return render_template('text_area.html')
 
 if __name__ == '__main__':

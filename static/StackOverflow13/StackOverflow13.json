@@ -1,0 +1,1 @@
+{"code": "@makebold\n@makeitalic\ndef say():\n   return \"Hello\"\n\"<b><i>Hello</i></b>\"\n", "output": "b'<b><i>hello world</i></b>\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow13", "dnvotes": 0}

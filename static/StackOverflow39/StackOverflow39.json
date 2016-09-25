@@ -1,0 +1,1 @@
+{"code": "ints = [8, 23, 45, 12, 78]\n", "output": "b'1 8\\n2 23\\n3 45\\n4 12\\n5 78\\n1 8\\n2 23\\n3 45\\n4 12\\n1 78\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow39", "dnvotes": 0}

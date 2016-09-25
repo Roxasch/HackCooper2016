@@ -1,0 +1,1 @@
+{"lang": "python", "incorrect": 0, "code": "try:\n\tl=[\"a\",\"b\"]\n\tint(l[2])\nexcept (ValueError, IndexError) as e:\n\tprint error", "name": "exception", "views": 0, "tags": [], "dnvotes": 0, "output": "error", "upvotes": 13, "correct": 0}

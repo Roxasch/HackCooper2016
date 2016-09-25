@@ -1,0 +1,1 @@
+{"code": "listone = [1, 2, 3]\nlisttwo = [4, 5, 6]\njoinedlist == [1, 2, 3, 4, 5, 6]\n", "output": "b'[1, 2, 2, 4, 4, 6, 7]\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow74", "dnvotes": 0}

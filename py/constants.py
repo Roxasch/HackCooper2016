@@ -1,3 +1,3 @@
-rootdir="/home/ubuntu/hackCooper/educode/HackCooper2016/"
-datadir=rootdir+"/data/"
+rootdir="/home/ubuntu/HackCooper2016/"
+datadir=rootdir+"/static/"
 exfile=rootdir+"/exfile"
