@@ -1,12 +1,5 @@
-html, body{
-    background-color: #FF9900;
-    text-align:center;
-
-}
-
-
-
-.btn {
+/*
+.btn-body {
     text-align:center;
     display: inline-block;
     padding: 6px 12px;
@@ -57,7 +50,7 @@ html, body{
 
 }
 
-.btn {
+.btn-body {
     text-align:center;
     padding: 14px 24px;
     border: 0 none;
@@ -65,7 +58,7 @@ html, body{
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-.btn:focus, .btn:active:focus, .btn.active:focus {
+.btn-body:focus, .btn-body:active:focus, .btn-body.active:focus {
     outline: 0 none;
 }
 
@@ -84,4 +77,53 @@ html, body{
 .glyphicon-arrow-up{
     text-align: left;
 }
+*/
+body {
+    background: #EEE !important;
+}
 
+.btn-arrows {
+    border: none !important;
+}
+
+.container {
+    background: white;
+}
+
+.navbar {
+    background: #333 !important;
+    border: none !important;
+    border-radius: 0px !important;
+}
+
+.site-search {
+    border-left: none;
+}
+
+.nav-left {
+    line-height: 50px;
+}
+
+.navbar input {
+    border-right: none;
+    box-shadow: none;
+}
+.input-group button {
+    border-left: none;
+}
+
+.home-btn {
+    color: white !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background: transparent !important;
+    border: none !important;
+    outline: none;
+}
+
+.home-btn:hover {
+    color: #333 !important;
+    background: white !important;
+}
