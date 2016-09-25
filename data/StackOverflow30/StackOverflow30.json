@@ -1,1 +1,1 @@
-{"code": "", "output": "b'[1, 2, 3, [4, 5]]\\n[1, 2, 3, 4, 5]\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow30", "dnvotes": 0}
+{"lang": "py", "incorrect": 0, "code": "a = []\n", "name": "StackOverflow30", "views": 0, "upvotes": 0, "output": "no\nno\n", "tags": [], "correct": 0, "dnvotes": 0}

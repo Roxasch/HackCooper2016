@@ -1,1 +1,1 @@
-{"code": "", "output": "b'[1, 7, 9]\\n[2, 9, 10, 13, 17]\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow48", "dnvotes": 0}
+{"lang": "py", "incorrect": 0, "code": "", "name": "StackOverflow48", "views": 0, "upvotes": 0, "output": "I want to represent the Fraction STRING as (1/2)\n('I want to represent the Fraction OBJECT as ', 'Fraction (1,2)')\n", "tags": [], "correct": 0, "dnvotes": 0}

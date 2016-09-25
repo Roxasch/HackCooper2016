@@ -1,1 +1,1 @@
-{"code": "", "output": "b'c-C\\nf-F\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow51", "dnvotes": 0}
+{"lang": "py", "incorrect": 0, "code": "", "name": "StackOverflow51", "views": 0, "upvotes": 0, "output": "['foo', 'bar', 'baz']\n1\n", "tags": [], "correct": 0, "dnvotes": 0}

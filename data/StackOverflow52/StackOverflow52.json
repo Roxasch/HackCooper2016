@@ -1,1 +1,1 @@
-{"code": "", "output": "b\"{'key3': 'Value3', 'Key2': 'Value2', 'Key1': 'Value1'}\\n\"", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow52", "dnvotes": 0}
+{"lang": "py", "incorrect": 0, "code": "", "name": "StackOverflow52", "views": 0, "upvotes": 0, "output": "{'new key': 'some new entry', 'dictionary_within_a_dictionary': {'sub_dict': {'other': 'dictionary'}}}\n", "tags": [], "correct": 0, "dnvotes": 0}

@@ -1,1 +1,1 @@
-{"code": "ClassName.StaticMethod ( )\n", "output": "b'2\\n2\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow67", "dnvotes": 0}
+{"lang": "py", "incorrect": 0, "code": "items = []\nitems.append(\"apple\")\nitems.append(\"orange\")\nitems.append(\"banana\")\n\n# FAKE METHOD::\nitems.amount()  # Should return 3\n", "name": "StackOverflow67", "views": 0, "upvotes": 0, "output": "3\n", "tags": [], "correct": 0, "dnvotes": 0}

@@ -1,1 +1,1 @@
-{"code": "items = []\nitems.append(\"apple\")\nitems.append(\"orange\")\nitems.append(\"banana\")\n\n# FAKE METHOD::\nitems.amount()  # Should return 3\n", "output": "b'3\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow65", "dnvotes": 0}
+{"lang": "py", "incorrect": 0, "code": "", "name": "StackOverflow65", "views": 0, "upvotes": 0, "output": "0\n1\n1\n1\n2\n", "tags": [], "correct": 0, "dnvotes": 0}

@@ -1,1 +1,1 @@
-{"code": "listone = [1, 2, 3]\nlisttwo = [4, 5, 6]\njoinedlist == [1, 2, 3, 4, 5, 6]\n", "output": "b'[1, 2, 2, 4, 4, 6, 7]\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow74", "dnvotes": 0}
+{"lang": "py", "incorrect": 0, "code": "l = range(1, 1000)\nprint chunks(l, 10) -> [ [ 1..10 ], [ 11..20 ], .., [ 991..999 ] ]\n", "name": "StackOverflow74", "views": 0, "upvotes": 0, "output": "<generator object chunks at 0x7f2c6fbd0960>\n[[0, 1, 4], [9, 16, 25], [36, 49, 64], [81]]\n", "tags": [], "correct": 0, "dnvotes": 0}

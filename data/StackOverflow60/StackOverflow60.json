@@ -1,1 +1,1 @@
-{"code": "", "output": "b'\\x1b[92m Hello world\\x1b[00m\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow60", "dnvotes": 0}
+{"lang": "py", "incorrect": 0, "code": "d = {'x': 1, 'y': 2, 'z': 3} \nfor key in d:\n    print key, 'corresponds to', d[key]\n", "name": "StackOverflow60", "views": 0, "upvotes": 0, "output": "y corresponds to 2\nx corresponds to 1\nz corresponds to 3\ny corresponds to 2\nx corresponds to 1\nz corresponds to 3\n", "tags": [], "correct": 0, "dnvotes": 0}

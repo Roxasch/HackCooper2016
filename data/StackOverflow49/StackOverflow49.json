@@ -1,1 +1,1 @@
-{"code": "", "output": "b\"['foo', 'bar', 'baz']\\n1\\n\"", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow49", "dnvotes": 0}
+{"lang": "py", "incorrect": 0, "code": "", "name": "StackOverflow49", "views": 0, "upvotes": 0, "output": "(array([0, 2, 6]),)\n", "tags": [], "correct": 0, "dnvotes": 0}

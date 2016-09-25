@@ -52,9 +52,15 @@ def do_routine(pages):
                     output = testPythonCode(snippet)
             except TimeoutError:
                 pass
+            except UnicodeEncodeError:
+                pass
+
             if output != None:
                 valid.append((snippets[0], output))
     return valid
+
+class TimeoutError(Exception):
+    pass
 
 class timeout:
     def __init__(self, seconds=1, error_message='Timeout'):

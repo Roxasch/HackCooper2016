@@ -1,1 +1,1 @@
-{"code": "", "output": "b'c\\na\\nb\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow22", "dnvotes": 0}
+{"lang": "py", "incorrect": 0, "code": "", "name": "StackOverflow22", "views": 0, "upvotes": 0, "output": "[(5, 'key2'), (8.1, 'key3'), (874.7, 'key1')]\n", "tags": [], "correct": 0, "dnvotes": 0}

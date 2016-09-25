@@ -1,1 +1,1 @@
-{"code": "ints = [8, 23, 45, 12, 78]\n", "output": "b'(0, 8)\\n(1, 23)\\n(2, 45)\\n(3, 12)\\n(4, 78)\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow38", "dnvotes": 0}
+{"lang": "py", "incorrect": 0, "code": "if not somestring.contains(\"blah\"):\n   continue\n", "name": "StackOverflow38", "views": 0, "upvotes": 0, "output": "tr  is been found in  This be a string\n", "tags": [], "correct": 0, "dnvotes": 0}

@@ -1,1 +1,1 @@
-{"code": "", "output": "b'1\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow23", "dnvotes": 0}
+{"lang": "py", "incorrect": 0, "code": "", "name": "StackOverflow23", "views": 0, "upvotes": 0, "output": "('February', 28)\n('April', 30)\n('November', 30)\n('June', 30)\n('September', 30)\n('October', 31)\n('January', 31)\n('March', 31)\n('August', 31)\n('May', 31)\n('December', 31)\n('July', 31)\n", "tags": [], "correct": 0, "dnvotes": 0}

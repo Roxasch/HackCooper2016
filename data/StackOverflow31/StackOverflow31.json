@@ -1,1 +1,1 @@
-{"code": "", "output": "b\"[1, 2, 3, [4, 5], 'abc']\\n[1, 2, 3, 4, 5, 'a', 'b', 'c']\\n\"", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow31", "dnvotes": 0}
+{"lang": "py", "incorrect": 0, "code": "a = []\n", "name": "StackOverflow31", "views": 0, "upvotes": 0, "output": " list is empty\n", "tags": [], "correct": 0, "dnvotes": 0}
