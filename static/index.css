@@ -1,0 +1,28 @@
+.one {
+	background-color: black;
+}
+
+.post-info {
+	text-align: center;
+}
+
+.hr {
+	color: black;
+	border: solid;
+}
+
+.navbar {
+	background: #333;
+}
+
+.site-search {
+	border-left: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+button {
+	outline: none !important;
+}
