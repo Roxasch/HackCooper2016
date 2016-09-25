@@ -1,0 +1,1 @@
+{"code": "l = range(1, 1000)\nprint chunks(l, 10) -> [ [ 1..10 ], [ 11..20 ], .., [ 991..999 ] ]\n", "output": "b'[1, 2, 3, 4]\\n[5, 6, 7]\\n[8, 9, 10]\\n'", "upvotes": 0, "correct": 0, "incorrect": 0, "lang": "py", "tags": [], "views": 0, "name": "StackOverflow71", "dnvotes": 0}
