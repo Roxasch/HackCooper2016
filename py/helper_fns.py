@@ -1,7 +1,7 @@
 import json
 from sys import *
 import subprocess
-from os import path
+from os import path, listdir
 from constants import *
 
 def getProblem(prob):
@@ -87,28 +87,55 @@ def getLanguage(problem):
 
 def getViews(problem):
     data = getProblem(problem)
-    return str(data['views'])
+    return data['views']
 
 def getUpvotes(problem):
     data = getProblem(problem)
-    return str(data['upvotes'])
+    return data['upvotes']
 
 def getDnvotes(problem):
     data = getProblem(problem)
-    return str(data['dnvotes'])
+    return data['dnvotes']
 
 def getNetVotes(problem):
     data = getProblem(problem)
-    return str(data['dnvotes'] - data['dnvotes'])
+    return data['dnvotes'] - data['dnvotes']
 
 def getCorrect(problem):
     data = getProblem(problem)
-    return str(data['correct'])
+    return data['correct']
 
 def getIncorrect(problem):
     data = getProblem(problem)
-    return str(data['incorrect'])
+    return data['incorrect']
+
+def getNetCorrect(problem):
+    data = getProblem(problem)
+    return data['correct'] - data['incorrect']
 
 def getTags(problem):
     data = getProblem(problem)
-    return str(data['tags'])
+    return data['tags']
+
+def getAllProblems():
+    return listdir(datadir)
+
+def getByDifficultyAsc():
+    return sorted(getAllProblems(), key=lambda x: getNetCorrect(x))
+
+
+def getByDifficultyDsc():
+    return sorted(getAllProblems(), key=lambda x: int(getNetCorrect(x)),
+            reverse=True)
+
+
+def getByUpvotesAsc():
+    return sorted(getAllProblems(), key=lambda x: getNetVotes(x))
+
+
+def getByUpvotesDsc():
+    return sorted(getAllProblems(), key=lambda x: int(getNetVotes(x)),
+            reverse=True)
+
+def getByTag(tag):
+    return [x for x in getAllProblems() if tag in getTags(x)]
