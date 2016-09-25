@@ -57,7 +57,7 @@ def runProblemFile(info):
              'exit': exit_code,
              'stdout': output }
 
-def overwriteProblem(problem, data):
+def overwriteProblem(name, data):
     with open(datadir+"/"+name+"/"+name+".json", "w+") as f:
         json.dump(data, f)
 
