@@ -39,6 +39,7 @@ def runProblemJson(prob_name, code):
     prob = getProblem(prob_name)
 
     with open(exfile, 'w+') as exfile_instance:
+        exfile_instance.write("#!/usr/bin/env python2\n")
         exfile_instance.write(code)
 
     return runProblemFile(prob)
