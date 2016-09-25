@@ -1,0 +1,58 @@
+
+.one {
+	background-color: black;
+}
+
+.post-info {
+	text-align: center;
+}
+
+.hr {
+	color: black;
+	border: solid;
+}
+
+.navbar {
+	background: #333;
+	border: none;
+	border-radius: 0px;
+}
+
+.site-search {
+	border-left: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+button {
+	outline: none !important;
+}
+
+.header_p {
+	font-size: 50px;
+}
+
+body {
+	color: #333;
+	background: #EEE;
+}
+
+.container {
+	background: white;
+	border-radius: 5px;
+}
+
+.tags {
+	margin-top: 70px;
+	font-size: 20px;
+}
+
+.tags > ul {
+	font-size: 15px;
+}
+
+.nav-left {
+	line-height: 50px;
+}
