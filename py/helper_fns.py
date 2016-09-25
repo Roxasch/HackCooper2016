@@ -2,33 +2,31 @@ import json
 from sys import *
 import subprocess
 from os import path
-
-rootdir="/home/ubuntu/hackCooper/educode/"
+from constants import *
 
 def getProblem(prob):
-     if (not path.isdir(rootdir+"/data/"+prob)):
+     if (not path.isdir(datadir+"/"+prob)):
          raise Exception("Problem not found:" + prob)
 
-     if (not path.isfile(rootdir+"/data/"+prob+"/"+prob+".json")):
+     if (not path.isfile(datadir+"/"+prob+"/"+prob+".json")):
          raise Exception("Problem not found:" + prob)
 
-     with open(rootdir+"/data/"+prob+"/"+prob+".json") as data:
+     with open(datadir+"/"+prob+"/"+prob+".json") as data:
          return json.load(data)
 
 def runProblemJson(prob_name, code):
     prob = getProblem(prob_name)
 
-    with open(rootdir+"exfile", 'w+') as exfile:
-        exfile.write(code)
+    with open(exfile, 'w+') as exfile_instance:
+        exfile_instance.write(code)
 
     return runProblemFile(prob)
-
 
 def runProblemFile(info):
 
     output = ""
     try:
-        output = subprocess.check_output([rootdir + "exfile"])
+        output = subprocess.check_output([exfile])
     except subprocess.CalledProcessError:
         output = "Process returned non-zero"
 
