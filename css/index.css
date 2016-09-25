@@ -26,3 +26,20 @@ li {
 button {
 	outline: none !important;
 }
+
+.header_p {
+	font-size: 50px;
+}
+
+body {
+	color: #333;
+}
+
+.tags {
+	margin-top: 70px;
+	font-size: 20px;
+}
+
+.tags > ul {
+	font-size: 15px;
+}
