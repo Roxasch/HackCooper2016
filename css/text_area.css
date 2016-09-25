@@ -1,9 +1,13 @@
 html, body{
-    text-align:center;
     background-color: #FF9900;
+    text-align:center;
+
 }
 
+
+
 .btn {
+    text-align:center;
     display: inline-block;
     padding: 6px 12px;
     margin-bottom: 0;
@@ -28,36 +32,33 @@ html, body{
     font-size: 18px;
     line-height: 1.33;
     border-radius: 6px;
+    text-align:center;
+
 }
 
 .btn-primary {
     color: #fff;
     background-color: #428bca;
     border-color: #357ebd;
+    text-align:center;
+
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-    color: #fff;
-    background-color: #3276b1;
-    border-color: #285e8e;
-}
+
 
 .btn-primary.gradient {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#33a6cc), color-stop(50%,#0099cc));
+    background: linear-gradient(#FFB24A, #FF9E19);
 }
 .btn-primary.gradient:hover, .btn-primary.gradient:focus, .btn-primary.gradient:active, .btn-primary.gradient.active, .open > .dropdown-toggle.btn-primary {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#66b2cc), color-stop(50%,#33a6cc));
+    background: linear-gradient(#FFB24A, #FF9E19);
 }
 .btn-primary.gradient:active, .btn-primary.gradient.active {
-    background: -webkit-linear-gradient(top, #267c99 50%, #007299 50%);
+    background: linear-gradient(#FFB24A, #FF9E19);
 
 }
 
 .btn {
+    text-align:center;
     padding: 14px 24px;
     border: 0 none;
     font-weight: 700;
@@ -78,5 +79,9 @@ html, body{
 .btn-primary:active, .btn-primary.active {
     background: #007299;
     box-shadow: none;
+}
+
+.glyphicon-arrow-up{
+    text-align: left;
 }
 
