@@ -69,7 +69,7 @@ def upVote(problem):
 
 def dnVote(problem):
     data = getProblem(problem)
-    data['dnvotes'] += 1
+    data['dnvotes'] -= 1
     overwriteProblem(problem, data)
 
 def addView(problem):
@@ -84,7 +84,7 @@ def addCorrect(problem):
 
 def addIncorrect(problem):
     data = getProblem(problem)
-    data['incorrect'] += 1
+    data['incorrect'] -= 1
     overwriteProblem(problem, data)
 
 def addTag(problem, tag):
