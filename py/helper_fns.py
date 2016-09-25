@@ -106,6 +106,12 @@ def getLanguage(problem):
     data = getProblem(problem)
     return data['lang']
 
+def getDesc(problem):
+    data = getProblem(problem)
+    if 'desc' in data:
+        return data['desc']
+    return ''
+
 def getViews(problem):
     data = getProblem(problem)
     return data['views']

@@ -14,7 +14,6 @@ Bootstrap(app)
 
 @app.route("/css/<path:path>",methods=['GET'])
 def css(path):
-    print path
     return send_from_directory('css',path)
 
 @app.route("/fonts/<path:path>",methods=['GET'])
@@ -43,24 +42,30 @@ def index():
 @app.route('/text', methods=['GET','POST'])
 def text():
     x = request.args['title']
+    y = request.args['showOutput']
     points = helper_fns.getUpvotes(x)
     code = helper_fns.getIncorrectCode(x)
-    print code
+    desc = helper_fns.getProblem(x)['desc']
+    if y:
+        stdout = helper_fns.getCorrectOutput(x)
+    else:
+        stdout = 'none'
     return render_template('text_area.html',
         points = points,
         title = x,
         code = code,
+        desc = desc,
         success = 'none',
-        stdout = 'none',
+        stdout = stdout,
         error  = 'none')
 
 # Check if code is right
 @app.route('/check',methods=['GET','POST'])
 def checkCode():
-    points = 0
     code     = str(request.form['value'])
     language = str(request.form['lang'])
     problem  = str(request.form['prob'])
+    print code
     output = helper_fns.runProblemJson(problem,code)
     if output['exit'] == 0:
         error = True

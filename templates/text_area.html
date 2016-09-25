@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="css/text_area.css">
     <link href="css/bootstrap.min.css" rel="stylesheet"> 
     <script href="js/bootstrap.min.js"></script>
-
 </head>
 <body>
 
@@ -55,7 +54,7 @@
             </div>
             <div class="col-sm-6">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12" style=font-size:48px;text-transform:capitalize>
                         {{ title }}
                     </div>
                 </div>
@@ -72,16 +71,17 @@
                         <button type="button" class="btn btn-warning">Compile</button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <textarea class="codemirror-textarea"></textarea>
-                    </div>
-                </div>
             </div>
             <div class="col-sm-6">
-                Goal: <br>
-                {{ desc }}
+                <span style=font-size:24px>Goal:</span> <br>
+                <span style=font-size:20px;padding-bottom:50px>{{ desc }}</span>
             </div>
+                <div class="row">
+                    <div class="col-sm-12" style=font-size:24px>
+                        Output:<br><br>
+                        {{ stdout }}
+                    </div>
+                </div>
         </div>
 
     </div>
@@ -92,7 +92,7 @@ function test(){
     $.post("/check",{
         "value":document.getElementById("text123").value,
         "lang":"python",
-        "prob":"1"}
+        "prob":"{{ title }}"}
     )
 }
 
