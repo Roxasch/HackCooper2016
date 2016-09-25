@@ -1,1 +1,1 @@
-{"lang": "python", "incorrect": 0, "code": "for i in range(1,5): print i", "name": "off by one", "views": 0, "upvotes": 0, "output": "1\n2\n3\n4\n5", "tags": [], "correct": 0, "dnvotes": 0}
+{"lang": "python", "incorrect": 0, "code": "for i in range(1,5): print i", "name": "off by one", "views": 0, "upvotes": 0, "output": "1\n2\n3\n4\n5", "tags": [], "correct": 0, "dnvotes": 0, "desc": "Print the numbers 1-5"}
