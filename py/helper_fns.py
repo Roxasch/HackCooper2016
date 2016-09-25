@@ -23,24 +23,18 @@ def runProblemJson(prob_name, code):
     return runProblemFile(prob)
 
 def runProblemFile(info):
-
-    output = ""
+    exit_code = 0
     try:
         output = subprocess.check_output([exfile])
-    except subprocess.CalledProcessError:
-        output = "Process returned non-zero"
+    except subprocess.CalledProcessError as e:
+        exit_code = e.returncode
+        output = e.output
 
-    ret = ""
-    if (output == info['output']):
-        ret += "Success!"
-    else:
-        ret += "Failure!"
+    correct_output = (output == info['output'])
 
-    ret += "\n\nCode output:\n\n"
-    ret += output
-
-    # TODO Return a comparison of output to the expected output
-    return ret
+    return { 'correct': correct_output,
+             'exit': exit_code,
+             'stdout': output }
 
 def overwriteProblem(problem, data):
     with open(datadir+"/"+name+"/"+name+".json", "w+") as f:
