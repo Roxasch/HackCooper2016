@@ -41,10 +41,11 @@ def getCodeFromPage(url):
 # WARNING!!! THIS FUNCTION EXECUTES ARBITRARY PYTHON CODE FROM STACKOVERFLOW
 def do_routine(pages):
     valid = []
-    for url in linksForNPagesOf50(1):
+    for url in linksForNPagesOf50(pages):
         snippets = getCodeFromPage(url)
         if len(snippets) == 1:
             continue
+
         for snippet in snippets[1:]:
             print ("running: \n" + snippet + "\n\n")
             try:
@@ -57,6 +58,26 @@ def do_routine(pages):
 
             if output != None:
                 valid.append((snippets[0], output))
+    return valid
+
+def do_routine_oneshot(url):
+    valid = []
+    snippets = getCodeFromPage(url)
+    if len(snippets) == 1:
+        return []
+
+    for snippet in snippets[1:]:
+        print ("running: \n" + snippet + "\n\n")
+        try:
+            with timeout(seconds=3):
+                output = testPythonCode(snippet)
+        except TimeoutError:
+            pass
+        except UnicodeEncodeError:
+            pass
+
+        if output != None:
+            valid.append((snippets[0], output))
     return valid
 
 class TimeoutError(Exception):
