@@ -14,6 +14,27 @@ def getProblem(prob):
      with open(datadir+"/"+prob+"/"+prob+".json") as data:
          return json.load(data)
 
+def testPythonCode(code):
+    '''Used to determine if code taken from stackoverflow makes sense, returns
+    None if it's not valid otherwise return output of program'''
+
+    with open(exfile, 'w+') as exfile_instance:
+        exfile_instance.write("#!/usr/bin/env python2\n")
+        exfile_instance.write(code)
+
+    output = ""
+    exit_code = 0
+    try:
+        output = subprocess.check_output([exfile])
+    except subprocess.CalledProcessError as e:
+        exit_code = e.returncode
+        output = e.output
+
+    if (exit_code == 0 and output != ""):
+        return output
+
+    return None
+
 def runProblemJson(prob_name, code):
     prob = getProblem(prob_name)
 
